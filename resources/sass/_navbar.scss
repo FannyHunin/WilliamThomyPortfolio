@@ -1,0 +1,44 @@
+.navbar{
+    font-family: 'Overpass', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: black;
+    padding: 0 !important;
+    height: 75px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    .navbar-brand{
+        color : white;
+        padding-left: 20px;
+        font-size: 25px;
+    }
+    .navbar-toggler-icon{
+        color: white;
+    }
+    .collapse{
+        .navbar-nav{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            color : white;
+            padding-right: 15px;
+            .nav-item{
+                padding-left: 10px;
+                padding-right: 10px;
+                height: 75px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: 0.4s;
+                .nav-link{
+                    padding: 0 !important;
+                    color: white;
+                }
+            }
+            .nav-item:hover{
+                background-color: rgba(146, 3, 3, 0.5);
+            }
+        }
+    }
+}
