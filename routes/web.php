@@ -2,9 +2,8 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
-use App\Http\Controllers\AllController;
 use App\Http\Controllers\ContactController;
-use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\TradPortfolioController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,12 +17,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//MAIN PAGES
 Route::get('/',[HomeController::class, 'index']);
-
 Route::get('/about', [AboutController::class, 'index']);
-
 Route::get('/contact', [ContactController::class, 'index']);
 
-Route::get('/portfolio', [PortfolioController::class, 'index']);
-
-Route::get('/portfolioAll', [AllController::class, 'index']);
+//PORTFOLIO 
+Route::get('/portfolio/traditionnel', [TradPortfolioController::class, 'index']);
+Route::get('/portfolio/traditionnel/{id}', [TradPortfolioController::class, 'show']);

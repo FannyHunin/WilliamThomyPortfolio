@@ -3,7 +3,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon text-white"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse bg-black" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
           <a class="nav-link" href="/">ACCUEIL</span></a>
@@ -13,10 +13,9 @@
             PORTFOLIO
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="/portfolio"><b>Toutes les oeuvres</b></a>
-            <a class="dropdown-item" href="/traditionnel">Traditionnel</a>
-            <a class="dropdown-item" href="/digital">Digital</a>
-            <a class="dropdown-item" href="/comics">Comics</a>
+            <a class="dropdown-item" href="/portfolio/traditionnel">Traditionnel</a>
+            <a class="dropdown-item" href="/portfolio/digital">Digital</a>
+            <a class="dropdown-item" href="/portfolio/comics">Comics</a>
           </div>
         </li>
         <li class="nav-item">

@@ -11161,72 +11161,72 @@ footer p a:hover {
   color: rgba(146, 3, 3, 0.85);
 }
 
-#portfolio {
+#portfolioTrad .container-fluid,
+#portfolioTrad .container-sm,
+#portfolioTrad .container-md,
+#portfolioTrad .container-lg,
+#portfolioTrad .container-xl {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 1rem;
+}
+
+#portfolioTrad .container-fluid .thumbnail-link .thumbnail,
+#portfolioTrad .container-sm .thumbnail-link .thumbnail,
+#portfolioTrad .container-md .thumbnail-link .thumbnail,
+#portfolioTrad .container-lg .thumbnail-link .thumbnail,
+#portfolioTrad .container-xl .thumbnail-link .thumbnail {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#portfolioTrad .container-fluid .thumbnail-link:nth-child(5n-4),
+#portfolioTrad .container-sm .thumbnail-link:nth-child(5n-4),
+#portfolioTrad .container-md .thumbnail-link:nth-child(5n-4),
+#portfolioTrad .container-lg .thumbnail-link:nth-child(5n-4),
+#portfolioTrad .container-xl .thumbnail-link:nth-child(5n-4) {
+  grid-column: span 4;
+  grid-row: span 2;
+}
+
+#portfolioTrad .container-fluid .thumbnail-link:nth-child(5n-3),
+#portfolioTrad .container-sm .thumbnail-link:nth-child(5n-3),
+#portfolioTrad .container-md .thumbnail-link:nth-child(5n-3),
+#portfolioTrad .container-lg .thumbnail-link:nth-child(5n-3),
+#portfolioTrad .container-xl .thumbnail-link:nth-child(5n-3),
+#portfolioTrad .container-fluid .thumbnail-link:nth-child(5n-2),
+#portfolioTrad .container-sm .thumbnail-link:nth-child(5n-2),
+#portfolioTrad .container-md .thumbnail-link:nth-child(5n-2),
+#portfolioTrad .container-lg .thumbnail-link:nth-child(5n-2),
+#portfolioTrad .container-xl .thumbnail-link:nth-child(5n-2) {
+  grid-column: span 2;
+}
+
+#portfolioTrad .container-fluid .thumbnail-link:nth-child(5n-1),
+#portfolioTrad .container-sm .thumbnail-link:nth-child(5n-1),
+#portfolioTrad .container-md .thumbnail-link:nth-child(5n-1),
+#portfolioTrad .container-lg .thumbnail-link:nth-child(5n-1),
+#portfolioTrad .container-xl .thumbnail-link:nth-child(5n-1),
+#portfolioTrad .container-fluid .thumbnail-link:nth-child(5n),
+#portfolioTrad .container-sm .thumbnail-link:nth-child(5n),
+#portfolioTrad .container-md .thumbnail-link:nth-child(5n),
+#portfolioTrad .container-lg .thumbnail-link:nth-child(5n),
+#portfolioTrad .container-xl .thumbnail-link:nth-child(5n) {
+  grid-column: span 3;
+}
+
+#tradShow .row .col-10 img {
+  width: 100%;
+}
+
+#tradShow .row .col-2 h1,
+#tradShow .row .col-2 h4 {
+  margin: 0;
+  padding: 0;
+  text-align: start;
   font-family: "Overpass", sans-serif;
-  font-weight: 300;
-  height: 76.9vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#portfolio .row .col-3 a {
-  font-size: 16px;
-  color: white;
-  transition: 0.4s;
-}
-
-#portfolio .row .col-3 a:hover {
-  text-decoration: none;
-  color: rgba(146, 3, 3, 0.85);
-}
-
-#portfolio .row .col-3 .portfolioImg {
-  width: 250px;
-  height: 250px;
-  margin-bottom: 15px;
-}
-
-#portfolio .row .col-3 #portfolioImg1 {
-  background-image: url(/images/digital0-1.jpg?5b9c0282c9db4b1c1b54836e3c697077);
-  background-position: center;
-  background-size: 100%;
-  transition: 0.4s;
-}
-
-#portfolio .row .col-3 #portfolioImg1:hover {
-  background-size: 105%;
-}
-
-#portfolio .row .col-3 #portfolioImg2 {
-  background-image: url(/images/tradi2.jpg?1af8702e4f4fdd3cd010933e9a000b0a);
-  background-position: center;
-  background-size: 200%;
-  transition: 0.4s;
-}
-
-#portfolio .row .col-3 #portfolioImg2:hover {
-  background-size: 205%;
-}
-
-#portfolio .row .col-3 #portfolioImg3 {
-  background-image: url(/images/digital0-2.jpg?90798e5467657406c68f1ec7a87c6d9d);
-  background-position: center;
-  background-size: 150%;
-  transition: 0.4s;
-}
-
-#portfolio .row .col-3 #portfolioImg3:hover {
-  background-size: 155%;
-}
-
-#portfolio .row .col-3 #portfolioImg4 {
-  background-image: url(/images/comics7.jpg?f7ef04bac2d918df58742cd24cbc81f0);
-  background-size: 195%;
-  transition: 0.4s;
-}
-
-#portfolio .row .col-3 #portfolioImg4:hover {
-  background-size: 200%;
+  font-weight: bolder;
 }
 
