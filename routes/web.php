@@ -3,6 +3,8 @@
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\DigiPortfolioController;
+use App\Http\Controllers\MailController;
 use App\Http\Controllers\TradPortfolioController;
 use Illuminate\Support\Facades\Route;
 
@@ -25,3 +27,9 @@ Route::get('/contact', [ContactController::class, 'index']);
 //PORTFOLIO 
 Route::get('/portfolio/traditionnel', [TradPortfolioController::class, 'index']);
 Route::get('/portfolio/traditionnel/{id}', [TradPortfolioController::class, 'show']);
+
+Route::get('portfolio/digital', [DigiPortfolioController::class, 'index']);
+Route::get('/portfolio/digital/{id}', [DigiPortfolioController::class, 'show']);
+
+//MAILING
+Route::post('/contact/send', [ContactController::class, 'store']);

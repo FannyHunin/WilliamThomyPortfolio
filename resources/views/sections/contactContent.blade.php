@@ -2,22 +2,23 @@
     <h1 style="text-align: left;">Contactez-moi</h1>
     <div class="row">
         <div class="col-6" id="form">
-            <form id="divLabel">
+            <form id="divLabel" action="/contact/send" method="post">
+                @csrf
                 <label for="">
                     Nom :
                     <div style="display: flex; flex-direction : row; justify-content: space-between; width : 100%">
-                        <input type="text" placeholder="Prénom" style="width: 48%">
-                        <input type="text" placeholder="Nom" style="width: 48%">  
+                        <input name="firstName" type="text" placeholder="Prénom" style="width: 48%" required>
+                        <input name="lastName" type="text" placeholder="Nom" style="width: 48%" required>  
                     </div>
                     
                 </label>
                 <label for="">
                     E-mail :
-                    <input type="email" placeholder="exemple@gmail.com">
+                    <input name="email" type="email" placeholder="exemple@gmail.com" required>
                 </label>
                 <label for="">
                     Message :
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Écrivez votre message ici."></textarea>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Écrivez votre message ici." required></textarea>
                 </label>
                 <button type="submit">Envoyer</button>
             </form>

@@ -8,11 +8,13 @@
 @import '~bootstrap/scss/bootstrap';
 
 
-//other imports
+//Custom
 @import './header';
+@import './carousel';
 @import './footer';
 @import './navbar';
 @import './about';
 @import './contact';
 @import './portfolioTrad';
+@import './portfolioDigi';
 @import './portfolioTradShow';

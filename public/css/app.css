@@ -10957,6 +10957,11 @@ a.text-dark:focus {
   }
 }
 
+#carouselExampleControls .carousel-control-prev,
+#carouselExampleControls .carousel-control-next {
+  z-index: 0;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -11166,55 +11171,69 @@ footer p a:hover {
 #portfolioTrad .container-md,
 #portfolioTrad .container-lg,
 #portfolioTrad .container-xl {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 1rem;
+  display: flex;
 }
 
-#portfolioTrad .container-fluid .thumbnail-link .thumbnail,
-#portfolioTrad .container-sm .thumbnail-link .thumbnail,
-#portfolioTrad .container-md .thumbnail-link .thumbnail,
-#portfolioTrad .container-lg .thumbnail-link .thumbnail,
-#portfolioTrad .container-xl .thumbnail-link .thumbnail {
+#portfolioTrad .container-fluid .row .col-3,
+#portfolioTrad .container-sm .row .col-3,
+#portfolioTrad .container-md .row .col-3,
+#portfolioTrad .container-lg .row .col-3,
+#portfolioTrad .container-xl .row .col-3 {
+  width: 250px;
+  height: 250px;
+}
+
+#portfolioTrad .container-fluid .row .col-3 .thumbnail-link,
+#portfolioTrad .container-sm .row .col-3 .thumbnail-link,
+#portfolioTrad .container-md .row .col-3 .thumbnail-link,
+#portfolioTrad .container-lg .row .col-3 .thumbnail-link,
+#portfolioTrad .container-xl .row .col-3 .thumbnail-link {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
-#portfolioTrad .container-fluid .thumbnail-link:nth-child(5n-4),
-#portfolioTrad .container-sm .thumbnail-link:nth-child(5n-4),
-#portfolioTrad .container-md .thumbnail-link:nth-child(5n-4),
-#portfolioTrad .container-lg .thumbnail-link:nth-child(5n-4),
-#portfolioTrad .container-xl .thumbnail-link:nth-child(5n-4) {
-  grid-column: span 4;
-  grid-row: span 2;
+#portfolioTrad .container-fluid .row .col-3 .thumbnail-link .thumbnail,
+#portfolioTrad .container-sm .row .col-3 .thumbnail-link .thumbnail,
+#portfolioTrad .container-md .row .col-3 .thumbnail-link .thumbnail,
+#portfolioTrad .container-lg .row .col-3 .thumbnail-link .thumbnail,
+#portfolioTrad .container-xl .row .col-3 .thumbnail-link .thumbnail {
+  width: 100%;
+  height: 100%;
 }
 
-#portfolioTrad .container-fluid .thumbnail-link:nth-child(5n-3),
-#portfolioTrad .container-sm .thumbnail-link:nth-child(5n-3),
-#portfolioTrad .container-md .thumbnail-link:nth-child(5n-3),
-#portfolioTrad .container-lg .thumbnail-link:nth-child(5n-3),
-#portfolioTrad .container-xl .thumbnail-link:nth-child(5n-3),
-#portfolioTrad .container-fluid .thumbnail-link:nth-child(5n-2),
-#portfolioTrad .container-sm .thumbnail-link:nth-child(5n-2),
-#portfolioTrad .container-md .thumbnail-link:nth-child(5n-2),
-#portfolioTrad .container-lg .thumbnail-link:nth-child(5n-2),
-#portfolioTrad .container-xl .thumbnail-link:nth-child(5n-2) {
-  grid-column: span 2;
+#portfolioDigi .container-fluid,
+#portfolioDigi .container-sm,
+#portfolioDigi .container-md,
+#portfolioDigi .container-lg,
+#portfolioDigi .container-xl {
+  display: flex;
 }
 
-#portfolioTrad .container-fluid .thumbnail-link:nth-child(5n-1),
-#portfolioTrad .container-sm .thumbnail-link:nth-child(5n-1),
-#portfolioTrad .container-md .thumbnail-link:nth-child(5n-1),
-#portfolioTrad .container-lg .thumbnail-link:nth-child(5n-1),
-#portfolioTrad .container-xl .thumbnail-link:nth-child(5n-1),
-#portfolioTrad .container-fluid .thumbnail-link:nth-child(5n),
-#portfolioTrad .container-sm .thumbnail-link:nth-child(5n),
-#portfolioTrad .container-md .thumbnail-link:nth-child(5n),
-#portfolioTrad .container-lg .thumbnail-link:nth-child(5n),
-#portfolioTrad .container-xl .thumbnail-link:nth-child(5n) {
-  grid-column: span 3;
+#portfolioDigi .container-fluid .row .col-3,
+#portfolioDigi .container-sm .row .col-3,
+#portfolioDigi .container-md .row .col-3,
+#portfolioDigi .container-lg .row .col-3,
+#portfolioDigi .container-xl .row .col-3 {
+  width: 250px;
+  height: 250px;
+}
+
+#portfolioDigi .container-fluid .row .col-3 .thumbnail-link,
+#portfolioDigi .container-sm .row .col-3 .thumbnail-link,
+#portfolioDigi .container-md .row .col-3 .thumbnail-link,
+#portfolioDigi .container-lg .row .col-3 .thumbnail-link,
+#portfolioDigi .container-xl .row .col-3 .thumbnail-link {
+  width: 100%;
+  height: 100%;
+}
+
+#portfolioDigi .container-fluid .row .col-3 .thumbnail-link .thumbnail,
+#portfolioDigi .container-sm .row .col-3 .thumbnail-link .thumbnail,
+#portfolioDigi .container-md .row .col-3 .thumbnail-link .thumbnail,
+#portfolioDigi .container-lg .row .col-3 .thumbnail-link .thumbnail,
+#portfolioDigi .container-xl .row .col-3 .thumbnail-link .thumbnail {
+  width: 100%;
+  height: 100%;
 }
 
 #tradShow .row .col-10 img {

@@ -1,4 +1,4 @@
-<section id="portfolioTrad" class="mt-5">
+<section id="portfolioDigi" class="mt-5">
     <div class="container-fluid">
         <div class="row">
             @foreach($items as $item)
