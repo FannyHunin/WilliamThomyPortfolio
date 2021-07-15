@@ -12,16 +12,29 @@ class ContactController extends Controller
         return view('pages.contact');
     }
 
-    public function store() {
-        $data = request()->validate([
-            "fistName" => "required",
-            "lastName" => "required",
-            "email" => "required|email",
-            "message" => "required",
-        ]);
+    // public function store() {
+    //     $data = request()->validate([
+    //         "fistName" => "required",
+    //         "lastName" => "required",
+    //         "email" => "required|email",
+    //         "message" => "required",
+    //     ]);
        
-        Mail::to('test@test.com')->send(new ContactMail());
+    //     // Mail::to('test@test.com')->send(new ContactMail());
 
-        return view('pages.home');
+    //     return 'mail sent';
+    // }
+
+    public function mailing () {
+        $data = request([
+            "firstName",
+            "lastName",
+            "email",
+            "message" 
+        ]);
+        
+        Mail::to('fanny.hunin.an123@gmail.com')->send(new ContactMail($data));
+
+        return redirect()->back()->with('success', 'Email envoyé.');;
     }
 }

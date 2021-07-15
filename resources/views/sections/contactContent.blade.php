@@ -1,16 +1,29 @@
 <section id="contact" class="mt-5">
     <h1 style="text-align: left;">Contactez-moi</h1>
+    @if (session('success'))
+    <div class="alert alert-success text-center">
+        {{ session('success') }}
+    </div>
+    <script>
+        window.setTimeout(function() {
+            $(".alert").fadeTo(500, 0).slideUp(500, function() {
+                $(this).remove();
+            });
+        }, 2000);
+    </script>
+    @endif
     <div class="row">
         <div class="col-6" id="form">
-            <form id="divLabel" action="/contact/send" method="post">
+
+            <form id="divLabel" action="/mailSent" method="POST">
                 @csrf
                 <label for="">
                     Nom :
                     <div style="display: flex; flex-direction : row; justify-content: space-between; width : 100%">
                         <input name="firstName" type="text" placeholder="Prénom" style="width: 48%" required>
-                        <input name="lastName" type="text" placeholder="Nom" style="width: 48%" required>  
+                        <input name="lastName" type="text" placeholder="Nom" style="width: 48%" required>
                     </div>
-                    
+
                 </label>
                 <label for="">
                     E-mail :
@@ -23,6 +36,8 @@
                 <button type="submit">Envoyer</button>
             </form>
         </div>
+
+
         <div class="col-6" id="cards">
             <div class="row mt-2">
                 <div class="col-6">
@@ -43,4 +58,3 @@
         </div>
     </div>
 </section>
-

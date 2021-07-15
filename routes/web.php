@@ -32,4 +32,5 @@ Route::get('portfolio/digital', [DigiPortfolioController::class, 'index']);
 Route::get('/portfolio/digital/{id}', [DigiPortfolioController::class, 'show']);
 
 //MAILING
-Route::post('/contact/send', [ContactController::class, 'store']);
+// Route::post('/contact/send', [ContactController::class, 'store']);
+Route::post('/mailSent', [ContactController::class, 'mailing']);
